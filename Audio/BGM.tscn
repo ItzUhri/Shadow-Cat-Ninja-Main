@@ -1,0 +1,7 @@
+[gd_scene load_steps=2 format=3 uid="uid://1bqnm52a1ln7"]
+
+[ext_resource type="AudioStream" uid="uid://7q847uxu0s2n" path="res://Audio/Epic Japanese Music  Shadow Ninja.mp3" id="1_i8be3"]
+
+[node name="AudioStreamPlayer" type="AudioStreamPlayer"]
+stream = ExtResource("1_i8be3")
+autoplay = true

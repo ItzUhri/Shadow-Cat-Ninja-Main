@@ -1,0 +1,18 @@
+[gd_scene load_steps=4 format=3 uid="uid://dqlqjulqhlj5o"]
+
+[ext_resource type="Texture2D" uid="uid://u0ffussasid1" path="res://GDScript/main_character/projectiles/4_Kunai.png" id="1_4cxvi"]
+[ext_resource type="Script" path="res://GDScript/main_character/projectiles/kunai.gd" id="1_i1tts"]
+
+[sub_resource type="RectangleShape2D" id="RectangleShape2D_lgob8"]
+size = Vector2(22, 4)
+
+[node name="Kunai" type="Area2D"]
+script = ExtResource("1_i1tts")
+
+[node name="Sprite2D" type="Sprite2D" parent="."]
+rotation = 1.57116
+scale = Vector2(0.120436, 0.149541)
+texture = ExtResource("1_4cxvi")
+
+[node name="CollisionShape2D" type="CollisionShape2D" parent="."]
+shape = SubResource("RectangleShape2D_lgob8")

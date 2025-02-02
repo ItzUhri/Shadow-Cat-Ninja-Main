@@ -1,0 +1,57 @@
+[gd_scene load_steps=3 format=3 uid="uid://wx8ltlym24rt"]
+
+[ext_resource type="Texture2D" uid="uid://d0px4kvtsfa2h" path="res://Assets/menubackground1.png" id="1_a80iy"]
+
+[sub_resource type="StyleBoxTexture" id="StyleBoxTexture_xai43"]
+texture = ExtResource("1_a80iy")
+
+[node name="Control" type="Control"]
+layout_mode = 3
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+
+[node name="Background" type="Panel" parent="."]
+layout_mode = 1
+anchors_preset = 15
+anchor_right = 1.0
+anchor_bottom = 1.0
+grow_horizontal = 2
+grow_vertical = 2
+theme_override_styles/panel = SubResource("StyleBoxTexture_xai43")
+
+[node name="Button" type="Button" parent="."]
+layout_mode = 1
+anchors_preset = 8
+anchor_left = 0.5
+anchor_top = 0.5
+anchor_right = 0.5
+anchor_bottom = 0.5
+offset_left = -188.0
+offset_top = -140.0
+offset_right = -120.0
+offset_bottom = -109.0
+grow_horizontal = 2
+grow_vertical = 2
+text = "Sounds"
+flat = true
+
+[node name="Button2" type="Button" parent="."]
+layout_mode = 0
+offset_left = 531.0
+offset_top = 181.0
+offset_right = 608.0
+offset_bottom = 212.0
+text = "Controls"
+flat = true
+
+[node name="Button3" type="Button" parent="."]
+layout_mode = 0
+offset_left = 663.0
+offset_top = 182.0
+offset_right = 733.0
+offset_bottom = 213.0
+text = "Buttons"
+flat = true
